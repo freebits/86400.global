@@ -33,6 +33,10 @@
     font-weight:700;
 }
 
+.jumbo-hero-location {
+    color:#aaa;
+}
+
 .jumbo-hero-subheading {
     font-size:1em;
 }
@@ -40,6 +44,14 @@
 .btn-black {
     background-color:#000;
     color:#ffd100;
+    box-shadow:2px 2px 20px rgba(0,0,0,0.1);
+    transition:0.2s;
+    margin-bottom:2vh;
+}
+.btn-black:hover {
+    background-color:#707070;
+    color:#ffd100;
+    margin-top:-1.1vh;
 }
 
 .btn-black-outline {
@@ -93,6 +105,12 @@
     padding-bottom:20vh;
 }
 
+.about-brand-image {
+    height:25vh;
+    width:100%;
+    margin-bottom:5vh;
+}
+
 .about-heading {
     font-size:4em;
 }
@@ -110,6 +128,7 @@
     padding-top:15vh;
     padding:10vh;
     padding-right:0vh;
+    text-align:center;
 }
 
 .section-about-extra-images {
@@ -239,7 +258,13 @@
 .btn-yellow {
     background-color:#ffd100;
     color:#202020;
-
+    box-shadow:2px 2px 20px rgba(0,0,0,0.1);
+    transition: 0.2s;
+    margin-bottom:2vh;
+}
+.btn-yellow:hover {
+    background-color:#ffde4d;
+    margin-top:-1.1vh;
 }
 
 .form-control {
@@ -398,6 +423,10 @@
     .section-about {
         padding-top:10vh;
         padding-bottom:7vh;
+    }
+
+    .about-brand-image {
+        height:20vh;
     }
 
     .about-text-area {
