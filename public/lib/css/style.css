@@ -1,0 +1,523 @@
+.navbar-custom {
+    background-color:#ffd100;
+    color:#202020;
+    padding:2vh;
+}
+
+.navbar-brand img {
+    width:200px;
+    height:auto;
+}
+
+.nav-item {
+    margin-right:2vh;
+}
+
+.jumbo-hero {
+    background-image:url('/lib/img/bg4.webp');
+    background-size:cover;
+    background-position:50% 50%;
+    height:85vh;
+}
+
+.jumbo-hero-text-area {
+    padding-top:25vh;
+    color:#202020;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.1)
+}
+
+.jumbo-hero-heading {
+    color:#202020;
+    font-size:2em;
+
+    font-weight:700;
+}
+
+.jumbo-hero-location {
+    color:#aaa;
+}
+
+.jumbo-hero-subheading {
+    font-size:1em;
+}
+
+.btn-black {
+    background-color:#000;
+    color:#ffd100;
+    box-shadow:2px 2px 20px rgba(0,0,0,0.1);
+    transition:0.2s;
+    margin-bottom:2vh;
+}
+.btn-black:hover {
+    background-color:#707070;
+    color:#ffd100;
+    margin-top:-1.1vh;
+}
+
+.btn-black-outline {
+    border:1px solid #ffd100;
+    color:#000;
+    text-decoration:none;
+}
+
+/* section services */
+.section-services {
+    background-color:#202020;
+    color:#000;;
+    padding-top:10vh;
+    padding-bottom:5vh;
+
+}
+
+.panel-services {
+    background-color:#fff;
+    padding:10vh;
+    border-radius:10px;
+    box-shadow:2px 2px 100px rgba(0,0,0,0.2);
+    margin-top:-30vh;
+    text-align:center;
+}
+
+.panel-services-icon {
+    color:#ffd100;
+    font-size:3em;
+}
+
+.panel-services-heading {
+    color:#ffd100;
+}
+
+.panel-services-description {
+    font-size:1em;
+}
+
+.panel-services-price {
+    font-weight:800;
+    color:#aaa;
+}
+
+/* section about */
+.section-about {
+    background-image:url('/lib/img/bg5.webp');
+    background-position:50% 50%;
+    background-size:cover;
+    padding-top:20vh;
+    padding-bottom:20vh;
+}
+
+.about-brand-image {
+    height:25vh;
+    width:100%;
+    margin-bottom:5vh;
+}
+
+.about-heading {
+    font-size:4em;
+}
+
+.about-heading small {
+    font-size:0.3em;
+    letter-spacing:10px;
+}
+
+.about-subheading {
+    font-size:1.3em;
+}
+
+.about-text-area {
+    padding-top:15vh;
+    padding:10vh;
+    padding-right:0vh;
+    text-align:center;
+}
+
+.section-about-extra-images {
+    margin-top:10vh;
+}
+
+.about-extra-image {
+    height:20vh;
+    object-fit:cover;
+    width:100%;
+    border-radius:10px;
+    box-shadow:2px 2px 40px rgba(0,0,0,0.4);
+}
+
+.about-image {
+    width:100%;
+    height:90vh;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:2px 2px 100px rgba(0,0,0,0.4);
+}
+
+/* section reviews */
+.section-reviews {
+    background-image:url('/lib/img/bg6.webp');
+    background-size:cover;
+    background-position:50% 50%;
+    color:#000;
+    padding-top:15vh;
+    padding-bottom:15vh;
+}
+
+.reviews-heading {
+    font-size:2em;
+    text-align: center;
+}
+
+.reviews-heading small {
+    font-size:0.7em;
+}
+
+.reviews-heading span {
+    font-size:3em;
+}
+
+.panel-review {
+    padding:10vh;
+    box-shadow:2px 2px 30px rgba(0,0,0,0.1);
+    margin-top:10vh;
+    display:block;
+    width:60%;
+    background-color:#fff;
+    margin-right:5vh;
+    margin-left:5vh;
+    margin-bottom:5vh;
+    border-radius:10px;
+}
+
+.panel-web-image {
+    width:100%;
+    height:50vh;
+    object-fit:cover;
+    object-position: 50% 50%;
+    border-radius:10px;
+    box-shadow:2px 2px 40px rgba(0,0,0,0.2);
+    overflow:scroll;
+    display:block;
+    margin-bottom:2vh;
+}
+
+.panel-author-image {
+    border-radius:50%;
+    height:15vh;
+    width:15vh;
+    object-fit:cover;
+    margin:0 auto;
+    margin-top:-17vh;
+    margin-bottom:5vh;
+    border:4px solid #ffd100;
+    box-shadow:2px 2px 30px rgba(0,0,0,0.1);
+}
+
+.reviews-carousel {
+    width:70%;
+    margin:0 auto;
+}
+
+
+/* slick css */
+.slick-dots {
+    bottom:-50px;
+}
+
+.slick-prev::before {
+    color:#ffd100;
+}
+
+.slick-next:before {
+    color:#ffd100;
+}
+
+/* section cta */
+
+
+/* contact page */
+.jumbo-contact {
+    background-color:#fff;
+    color:#202020;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    background-image: url('/lib/img/contact-bg.webp');
+    background-size:cover;
+    background-position:50% 0%;
+}
+
+.panel-contact {
+    padding:10vh;
+    box-shadow:2px 2px 80px rgba(0,0,0,0.1);
+    border-radius:10px;
+    background-color:#fff;
+}
+
+.contact-heading small {
+    font-size:0.8em;
+}
+
+.btn-yellow {
+    background-color:#ffd100;
+    color:#202020;
+    box-shadow:2px 2px 20px rgba(0,0,0,0.1);
+    transition: 0.2s;
+    margin-bottom:2vh;
+}
+.btn-yellow:hover {
+    background-color:#ffde4d;
+    margin-top:-1.1vh;
+}
+
+.form-control {
+    box-shadow:2px 2px 15px rgba(0,0,0,0.1);
+    border:1px solid #eee;
+}
+
+.form-group {
+    margin-bottom:3vh;
+}
+
+.form-error {
+    color:#c00;
+}
+
+/* success */
+.jumbo-success {
+    padding-top:15vh;
+    padding-bottom:15vh;
+    background-image:url('/lib/img/success-bg.webp');
+    background-size:cover;
+    background-position:50% 50%;
+}
+.success-icon {
+    font-size:5em;
+    color:#ffd100;
+}
+
+/* section footer */
+.footer {
+    background-color:#ffd100;
+    color:#202020;
+    padding-top:10vh;
+    padding-bottom:10vh;
+    text-align:center;
+}
+
+.footer-brand {
+    width:100%;
+    object-fit:cover;
+}
+
+.footer a {
+    text-decoration:none;
+    color:#202020;
+    text-align:center;
+    margin-top:5vh;
+    display:block;
+}
+
+@media (max-width:767px) {
+    .jumbo-hero {
+        background-image:url('/lib/img/hero-mobile.webp');
+        background-size:cover;
+        height:75vh;
+    }
+
+    .jumbo-hero-location {
+        text-align:center;
+        color:rgba(255,255,255,0.8);
+    }
+
+    .jumbo-hero-heading {
+        color:#ffd100;
+        text-align:center;
+    }
+
+    .jumbo-hero-heading span {
+        font-size:1.5em;
+    }
+
+    .btn-black {width:49%;background-color:#fff;color:#000;}
+    .btn-black-outline{width:49%;color:#ffd100;}
+
+    .section-services {
+        padding-top:5vh;
+        padding-bottom:5vh;
+    }
+
+    .panel-services {
+        margin-top:5vh;
+    }
+
+    .section-about {
+        padding-top:3vh;
+        padding-bottom:3vh;
+    }
+    .about-image {
+        height:70vh;
+    }
+
+    .about-text-area {
+        padding-left:2vh;
+        padding-right:2vh;
+    }
+    .about-extra-image {
+        margin-top:5vh;
+        height:20vh;
+    }
+
+    .about-subheading {
+        font-size:1em;
+        margin-bottom:4vh;
+    }
+    .section-reviews {
+        padding-top:5vh;
+    }
+
+    .panel-review {
+        padding:5vh;
+        text-align:center;
+    }
+    .panel-web-image {
+        height:20vh;
+    }
+    .panel-author-image {
+        width:12vh;
+        height:12vh;
+        margin-top:-10vh;
+    }
+
+    .reviews-carousel {
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+
+    .jumbo-contact {
+        background-image:url('/lib/img/contact-bg-mobile.webp');
+        background-size:cover;
+    }
+
+    .panel-contact {
+        padding:5vh;
+    }
+
+    .footer-brand {
+        width:50%;
+    }
+}
+
+@media (min-width:768px) {
+    .jumbo-hero {
+        background-position:45% 50%;
+    }
+    
+    .panel-services {
+        padding:5vh;
+        height:33vh;
+    }
+
+    .panel-services-description {
+        font-size:0.8em;
+    }
+
+    .section-about {
+        padding-top:10vh;
+        padding-bottom:7vh;
+    }
+
+    .about-brand-image {
+        height:20vh;
+    }
+
+    .about-text-area {
+        padding-left:2vh;
+        padding-right:0;
+    }
+
+    .about-subheading {
+        font-size:1em;
+    }
+
+    .about-image {
+        height:70vh;
+    }
+
+    .section-about-extra-images {
+        margin-top:5vh;
+    }
+    .about-extra-image {
+        height:10vh;
+        margin-top:0vh;
+    }
+
+    .reviews-carousel {
+        width:100%;
+    }
+
+    .panel-review {
+        text-align:center;
+    }
+
+    .panel-web-image {
+        height:27vh;
+     }
+
+    .panel-contact {
+        padding:6vh;
+    }
+
+    .footer a {
+        margin-top:1vh;
+    }
+}
+
+@media (min-width:992px) {
+    .panel-web-image {
+        height: 6px;0vh;
+    }
+}
+
+@media (min-width:1200px) {
+    .jumbo-hero-heading {
+        font-size:3em;
+    }
+    
+    .panel-services {
+        padding:7vh;
+        height:auto;
+
+    }
+
+    .panel-services-description{
+        font-size:1.2em;
+    }
+    
+    .about-text-area {
+        padding-left:10vh;
+        padding-right:10vh;
+    }
+
+    .about-image {
+        height:90vh;
+    }
+
+    .about-extra-image {
+        height:23vh;
+    }
+
+    .reviews-carousel {
+        width:70%;
+    }
+    .panel-web-image {
+        height:45vh;
+    }
+
+    .panel-contact {
+        padding:10vh;
+    }
+
+    .footer a {
+        margin-top:5vh;
+    }
+}
+
