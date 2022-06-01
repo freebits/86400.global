@@ -1,7 +1,7 @@
 <?php
 
 function add_contact(string $name, string $phone, string $email, string $message) {
-  $dbh = new PDO("pgsql:dbname=86400.global", "user");
+  $dbh = new PDO("pgsql:dbname=86400.global", "ubuntu");
   $sth = $dbh->prepare(
     'INSERT INTO contact(name, phone, email, message)
     VALUES (:name, :phone, :email, :message)' 
