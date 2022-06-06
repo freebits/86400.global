@@ -1,7 +1,9 @@
 <?php
+require dirname(__DIR__).'/vendor/autoload.php';
 
 function add_contact(string $name, string $phone, string $email, string $message) {
-  $dbh = new PDO("pgsql:dbname=86400.global", "ubuntu");
+  $cfg = get_config();
+  $dbh = new PDO("pgsql:dbname=".$cfg['DB_NAME'], $cfg['DB_USER']);
   $sth = $dbh->prepare(
     'INSERT INTO contact(name, phone, email, message)
     VALUES (:name, :phone, :email, :message)' 
