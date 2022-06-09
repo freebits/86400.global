@@ -1,5 +1,5 @@
 <?php
-require dirname(__DIR__).'/vendor/autoload.php';
+require_once dirname(__DIR__).'/vendor/autoload.php';
 
 $name = '';
 $name_error = '';
@@ -53,5 +53,4 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
           header('Location: /success.html');
       }
 }
-require_once(dirname(__FILE__).'/lib/views/contact_template.php');
-
+require_once(dirname(__DIR__).'/views/contact_template.php');
