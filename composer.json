@@ -12,7 +12,7 @@
   },
   
   "autoload": {
-    "files": ["config/config.php", "models/contact_db.php", "mail/mail.php"]
+    "files": ["config/config.php", "models/contact_db.php", "util/contact_mail.php"]
   }
   
 }
