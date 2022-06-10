@@ -16,12 +16,17 @@ function contact_mail($name, $phone, $email, $message) {
 		'Phone: '. $phone.PHP_EOL.
 		'Email: '. $email.PHP_EOL.
 		'Message: '.PHP_EOL.$message.PHP_EOL;
-
-    $mg = Mailgun::create($mailgun_key);
-    $mg->messages()->send($mailgun_domain, [
-        'from' => $mail_from,
-        'to' => $mail_to,
-        'subject' => $subject,
-        'text' => $body]);
+    
+    try {
+        $mg = Mailgun::create($mailgun_key);
+        $mg->messages()->send($mailgun_domain, [
+            'from' => $mail_from,
+            'to' => $mail_to,
+            'subject' => $subject,
+            'text' => $body]);
+    } 
+    catch (Exception $e) {
+        error_log('Mailgun error, email could not be sent');
+    }
 }
 ?>
