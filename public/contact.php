@@ -1,7 +1,6 @@
 <?php
 require_once dirname(__DIR__).'/vendor/autoload.php';
 
-
 define('MAX_NAME_LENGTH', 128)
 define('MAX_PHONE_LENGTH', 32)
 define('MAX_EMAIL_LENGTH', 128)
@@ -17,10 +16,10 @@ $message = '';
 $message_error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST['name'];
-    $phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+    $message = filter_var($_POST['message'], FILTER_SANITZE_STRING);
 
     if (strlen($name) === 0) {
         $name_error = 'Name is required.';
