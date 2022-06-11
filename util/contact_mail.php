@@ -2,7 +2,8 @@
 require dirname(__DIR__).'/vendor/autoload.php';
 use Mailgun\Mailgun;
 
-function contact_mail($name, $phone, $email, $message) {
+function contact_mail($name, $phone, $email, $message)
+{
     $cfg = get_config();
     
     $mailgun_key = $cfg['MAILGUN_KEY'];
@@ -11,11 +12,11 @@ function contact_mail($name, $phone, $email, $message) {
     $mail_from = $cfg['MAIL_FROM'];
     
     $subject = 'CONTACT: '. $name;
-	$body =
-		'Name: '. $name.PHP_EOL.
-		'Phone: '. $phone.PHP_EOL.
-		'Email: '. $email.PHP_EOL.
-		'Message: '.PHP_EOL.$message.PHP_EOL;
+    $body =
+        'Name: '. $name.PHP_EOL.
+        'Phone: '. $phone.PHP_EOL.
+        'Email: '. $email.PHP_EOL.
+        'Message: '.PHP_EOL.$message.PHP_EOL;
     
     try {
         $mg = Mailgun::create($mailgun_key);
@@ -24,9 +25,7 @@ function contact_mail($name, $phone, $email, $message) {
             'to' => $mail_to,
             'subject' => $subject,
             'text' => $body]);
-    } 
-    catch (Exception $e) {
+    } catch (Exception $e) {
         error_log('Mailgun error, email could not be sent');
     }
 }
-?>

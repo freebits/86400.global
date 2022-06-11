@@ -1,6 +1,7 @@
 <?php
 
-function get_config() {
+function get_config()
+{
     return array(
         'MAILGUN_KEY' => 'key-7a9bb86b317120698eecae4cf3e52143',
         'MAIL_FROM' => 'noreply@mail.86400.global',
@@ -10,4 +11,3 @@ function get_config() {
         'DB_USER' => 'trader'
     );
 }
-?>
