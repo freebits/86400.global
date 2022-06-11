@@ -1,7 +1,7 @@
 <?php
 require dirname(__DIR__).'/vendor/autoload.php';
 
-function add_contact(string $name, string $phone, string $email, string $message)
+function add_contact(string $name, string $phone, string $email, string $message): void
 {
     $cfg = get_config();
     try {

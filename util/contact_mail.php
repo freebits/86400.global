@@ -2,7 +2,7 @@
 require dirname(__DIR__).'/vendor/autoload.php';
 use Mailgun\Mailgun;
 
-function contact_mail($name, $phone, $email, $message)
+function mail_contact(string $name, string $phone, string $email, string $message): void
 {
     $cfg = get_config();
     

@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       empty($email_error) &&
       empty($message_error)) {
           add_contact($name, $phone, $email, $message);
-          contact_mail($name, $phone, $email, $message);
+          mail_contact($name, $phone, $email, $message);
           header('Location: /success.html');
     }
 }
