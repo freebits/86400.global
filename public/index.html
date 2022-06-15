@@ -36,28 +36,86 @@
         <div class="jumbotron jumbo-hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12  col-lg-7">
                         <div class="jumbo-hero-text-area">
-                            <p class="jumbo-hero-location">
-                                <small>
-                                    <i class="bi bi-geo-alt"></i> Built in Brisbane, Queensland, Australia
-                                </small>
-                            </p>
                             <h1 class="jumbo-hero-heading">
-                                Custom websites for
-                                <br/>
-                                <span>global business.</span>
+                                The best websites in <br/>
+                                <span style="font-size:2.4em;color:#ffd100;">Brisbane</span>
                             </h1>
-                            <br/>
                             <a href="/contact.php" class="btn btn-md btn-yellow">
                                 <i class="bi bi-chat-fill"></i> Talk to our team!
                             </a>
                             <a href="/#prebuilts" class="btn btn-md btn-black">
                                 <i class="bi bi-window-sidebar"></i> Prebuilt websites
                             </a>
+                            <Br/><br/>
+                            <div class="reviews-carousel">
+                                <div class="panel-review">
+  
+                                    <img src="/lib/img/cascadegardendesignowner.webp" class="panel-review-image-author"/>
+
+                                <blockquote class="panel-review-quote">
+                                    86400.global Is a fantastic web designer.
+                                    Nothing was to much trouble when he created my web site Cascade Garden Design.
+                                    Cost for his work is very good and i would highly recommend him for your project. 10/10.
+                                    <br/>
+                                    <hr class="panel-review-border"/>
+                                    <div class="row">
+                                        <div class="col-12 col-md-7">
+                                            <img src="/lib/img/cascade.webp" class="panel-review-image-business"/>
+                                            <small class="panel-review-business">
+                                                Cascade Garden Design
+                                                <a href="cascadegardendesign.com.au" class="panel-review-business-link">
+                                                    cascadegardendesign.com.au
+                                                </a>
+                                            </small>
+                                        </div>
+                                        <div class="col-12 col-md-5">
+                                            <p class="panel-review-stars">
+                                                <span class="bi bi-star-fill"></span>
+                                                <span class="bi bi-star-fill"></span>
+                                                <span class="bi bi-star-fill"></span>
+                                                <span class="bi bi-star-fill"></span>
+                                                <span class="bi bi-star-fill"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                            <div class="panel-review">
+  
+                                <img src="/lib/img/conquertermitesowner.webp" class="panel-review-image-author"/>
+
+                            <blockquote class="panel-review-quote">
+                                86400.global is very knowledgeable about websites and the SEO of my website. He is always helpful with any questions we have. We have no hesitation recommending his services to other companies
+                                <br/>
+                                <hr class="panel-review-border"/>
+                                <div class="row">
+                                    <div class="col-12 col-md-7">
+                                        <img src="/lib/img/conquertermites.webp" class="panel-review-image-business"/>
+                                        <small style="display:block;" class="panel-review-business">
+                                            Conquer Termites South Central
+                                            <a href="https://termitesruncorn.com.au" class="panel-review-business-link">
+                                                termitesruncorn.com.au
+                                            </a>
+                                        </small>
+                                    </div>
+                                    <div class="col-12 col-md-5">
+                                        <p class="panel-review-stars">
+                                            <span class="bi bi-star-fill"></span>
+                                            <span class="bi bi-star-fill"></span>
+                                            <span class="bi bi-star-fill"></span>
+                                            <span class="bi bi-star-fill"></span>
+                                            <span class="bi bi-star-fill"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
+                </div>
+            </div>
             </div>
         </div>
         <div class="section-services">
@@ -152,16 +210,16 @@
                         </h2>
                     </div>
                     <div class="col-12">
-                        <div class="reviews-carousel">
-                            <div class="panel-review">
+                        <div class="templates-carousel">
+                            <div class="panel-template">
                                 <img src="/lib/img/web.webp" class="panel-web-image"/>
                                 <p>Electrician Blue $500</p>
                             </div>
-                            <div class="panel-review">
+                            <div class="panel-template">
                                 <img src="/lib/img/web2.webp" class="panel-web-image"/>
                                 <p>Automotive Red $500</p>
                             </div>
-                            <div class="panel-review">
+                            <div class="panel-template">
                                 <img src="/lib/img/web3.webp" class="panel-web-image"/>
                                 <p> Restaurant Minimal $500</p>
                             </div>
@@ -194,6 +252,14 @@
     <script>
         $(document).ready(function(){
             $('.reviews-carousel').slick({
+                autoplay:true,
+                slidesToShow:1,
+                slidesToScroll:1,
+                dots:true
+            });
+        });
+        $(document).ready(function(){
+            $('.templates-carousel').slick({
                 autoplay:true,
                 slidesToShow:1,
                 slidesToScroll:1,
