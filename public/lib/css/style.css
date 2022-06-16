@@ -130,17 +130,16 @@
 .section-services {
     background-color:#202020;
     color:#000;;
-    padding-top:10vh;
+    padding-top:5vh;
     padding-bottom:5vh;
 }
 
 .panel-services {
-    background-color:#fff;
     padding:10vh;
     border-radius:10px;
-    box-shadow:2px 2px 100px rgba(0,0,0,0.2);
     text-align:center;
-    margin-top:-20vh;
+    margin-top:0vh;
+    color:#fff;
 }
 
 .panel-services-icon {
@@ -217,7 +216,7 @@
 }
 
 /* section reviews */
-.section-reviews {
+.section-templates {
     background-image:url('/lib/img/bg6.webp');
     background-size:cover;
     background-position:50% 50%;
@@ -240,7 +239,7 @@
 }
 
 .panel-template {
-    padding:10vh;
+    padding:0vh;
     box-shadow:2px 2px 30px rgba(0,0,0,0.1);
     margin-top:10vh;
     display:block;
@@ -258,10 +257,12 @@
     object-fit:cover;
     object-position: 50% 50%;
     border-radius:10px;
-    box-shadow:2px 2px 40px rgba(0,0,0,0.2);
     overflow:scroll;
     display:block;
     margin-bottom:2vh;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius:0px;
+    box-shadow:none;
 }
 
 .panel-author-image {
@@ -385,6 +386,7 @@
         background-image:url('/lib/img/hero-mobile.webp');
         background-size:cover;
         height:auto;
+        padding-bottom:0;
     }
 
     .jumbo-hero-location {
@@ -412,12 +414,13 @@
     .btn-black-outline{width:49%;color:#ffd100;}
 
     .section-services {
-        padding-top:5vh;
-        padding-bottom:5vh;
+        padding-top:3vh;
+        padding-bottom:10vh;
     }
 
     .panel-services {
         margin-top:5vh;
+        padding:3vh;
     }
 
     .section-about {
@@ -442,16 +445,21 @@
         margin-bottom:4vh;
     }
 
-    .section-reviews {
-        padding-top:5vh;
+    .section-templates {
+        padding-top:10vh;
+        padding-bottom:7vh;
     }
 
     .panel-template {
-        padding:5vh;
+        padding:0vh;
         text-align:center;
+        margin:2vh;
+        margin-top:5vh;
+        box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+        
     }
     .panel-web-image {
-        height:20vh;
+        height:24vh;
     }
     .panel-author-image {
         width:12vh;
@@ -460,8 +468,8 @@
     }
 
     .templates-carousel {
-        width:100%;
-        margin:0;
+        width:90%;
+        margin:0 auto;
         padding:0;
     }
 
@@ -491,7 +499,7 @@
     }
     
     .jumbo-hero-heading span {
-        font-size:2.9em;
+        font-size:2.95em;
         color:#ffd100;
     }
 
@@ -518,8 +526,8 @@
     }
 
     .panel-services {
-        padding:5vh;
-        height:33vh;
+        padding:5vh 2vh;
+        height:30vh;
     }
 
     .panel-services-description {
@@ -531,6 +539,9 @@
         padding-bottom:7vh;
     }
 
+    .about-text-area {
+        padding-top:4vh;
+    }
     .about-brand-image {
         height:20vh;
     }
@@ -551,6 +562,7 @@
     .section-about-extra-images {
         margin-top:5vh;
     }
+
     .about-extra-image {
         height:10vh;
         margin-top:0vh;
@@ -560,12 +572,23 @@
         width:100%;
     }
 
+    .section-templates {
+        padding-top:7vh;
+        padding-bottom:7vh;
+    }
+
     .panel-template {
         text-align:center;
+        padding:0vh;
+        margin:3vh;
+    }
+
+    .panel-template p {
+        margin-bottom:2.5vh;
     }
 
     .panel-web-image {
-        height:27vh;
+        height:40vh;
      }
 
     .panel-contact {
@@ -585,7 +608,7 @@
         background-size:115%;
     }
     .jumbo-hero-text-area {
-        padding-top:10vh;
+        margin-top:2vh;
     }
     .jumbo-hero-heading {
         text-align:center;
@@ -631,8 +654,27 @@
         font-size:1.5em;
         text-align:right;
     }
+
+    .section-services {
+        padding-bottom:11vh;
+    }
+    .panel-services {
+        text-align:left;
+    }
+    
+    .panel-services-icon {
+        font-size:2.5em;
+    }
+
+    .panel-services-heading {
+        font-size:1.3em;
+    }
     .panel-web-image {
-        height:70vh;
+        height:75vh;
+    }
+
+    .about-extra-image {
+        height:17vh;
     }
 }
 
@@ -646,11 +688,14 @@
     .jumbo-hero-heading {
         font-size:2.9em;
         text-align:center;
+        line-height:2em;
     }
 
     .jumbo-hero-text-area {
          margin:2vh;
+         margin-top:0vh;
     }
+
     .jumbo-hero-heading span {
         display:block;
         margin-bottom:6vh;  
@@ -661,15 +706,24 @@
     }
     
     .panel-review {
-        box-shadow:2px 2px 30px rgba(0,0,0,0.1);
         padding:2vh;
         margin:3vh;
         margin-top:2vh;
         margin-bottom:2vh;
-        }
+        border:1px solid #eee;
+    }
 
     .panel-review-quote {
         font-size:0.7em;
+    }
+
+    .panel-review-business {
+        margin-top:2px;
+    }
+
+    .section-services {
+        padding-top:3vh;
+        padding-bottom:5vh;
     }
 
     .panel-services {
@@ -679,9 +733,13 @@
     }
 
     .panel-services-description{
-        font-size:1.2em;
+        font-size:1em;
     }
     
+    .section-about {
+        padding-bottom:10vh;
+    }
+
     .about-text-area {
         padding-left:10vh;
         padding-right:10vh;
@@ -699,7 +757,7 @@
         width:70%;
     }
     .panel-web-image {
-        height:45vh;
+        height:62vh;
     }
 
     .panel-contact {
