@@ -393,12 +393,19 @@
     }
 
     .jumbo-hero-heading {
-        color:#ffd100;
+        color:#fff;
         text-align:center;
+        font-size:1.5em;
+        line-height:2em;
     }
 
     .jumbo-hero-heading span {
-        font-size:1.5em;
+        font-size:3em;
+        color:#ffd100;
+    }
+
+    .jumbo-hero-text-area .btn {
+        width:100%;
     }
 
     .btn-black {width:49%;background-color:#fff;color:#000;}
@@ -483,9 +490,19 @@
         text-align:center;
     }
     
+    .jumbo-hero-heading span {
+        font-size:2.9em;
+        color:#ffd100;
+    }
+
     .jumbo-hero-text-area{
         text-align:Center;
         margin-bottom:10vh;
+    }
+
+    .btn-black {
+        background-color:#fff;
+        color:#000;
     }
 
     /* reviews */
@@ -575,7 +592,9 @@
         color:#000;
     }
 
-    .jumbo-hero-text-area .btn {
+    .btn-black {
+        background-color:#000;
+        color:#ffd100;
     }
 
     .reviews-carousel {
@@ -613,7 +632,7 @@
         text-align:right;
     }
     .panel-web-image {
-        height: 6px;
+        height:70vh;
     }
 }
 
@@ -625,7 +644,7 @@
         background-image:url('/lib/img/bg4.webp');
     }
     .jumbo-hero-heading {
-        font-size:3em;
+        font-size:2.9em;
         text-align:center;
     }
 
