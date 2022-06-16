@@ -299,6 +299,43 @@
 /* section cta */
 
 
+/* aux pages */
+.jumbo-aux {
+    background-image:url('/lib/img/bg9-mobile.webp');
+}
+
+.jumbo-aux-text-area {
+    text-align:center;
+    margin-top:12vh;
+    margin-bottom:12vh;
+    padding-top:0;
+}
+
+.jumbo-aux-heading {
+    text-align:center;
+    font-size:2em;
+    color:#aaa;
+    text-shadow:none;
+}
+
+.jumbo-aux-heading-emphasis {
+    color:#ffd100;
+    font-size:2.8em;
+    line-height:1.2em;
+}
+
+.jumbo-aux-check-item {
+    margin-bottom:20px;;
+    color:#fff;
+}
+
+.jumbo-aux-check-circle {
+    border:1px solid #fff;border-radius:50%;padding:5px 6px;margin-right:5px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+
 /* contact page */
 .jumbo-contact {
     background-color:#fff;
@@ -407,7 +444,10 @@
     }
 
     .jumbo-hero-text-area .btn {
-        width:100%;
+        width:85%;
+        display:block;
+        margin:0 auto;
+        margin-top:15px;
     }
 
     .btn-black {width:49%;background-color:#fff;color:#000;}
@@ -473,6 +513,11 @@
         padding:0;
     }
 
+        /* aux pages */
+        .jumbo-aux {
+            background-image:url('/lib/img/bg9-mobile.webp');
+        }
+
     .jumbo-contact {
         background-image:url('/lib/img/contact-bg-mobile.webp');
         background-size:cover;
@@ -530,6 +575,10 @@
         height:30vh;
     }
 
+    .panel-services-heading {
+        font-size:1.1em;
+    }
+    
     .panel-services-description {
         font-size:0.8em;
     }
@@ -590,6 +639,14 @@
     .panel-web-image {
         height:40vh;
      }
+
+    /* aux pages */
+    .jumbo-aux {
+        background-image:url('/lib/img/bg9-mobile.webp');
+    }
+    .jumbo-aux-text-area {
+        margin-top:17vh;
+    }
 
     .panel-contact {
         padding:6vh;
@@ -676,12 +733,49 @@
     .about-extra-image {
         height:17vh;
     }
+
+    /*aux pages */
+    .jumbo-aux {
+        height:80vh;
+        background-image:url('/lib/img/bg9.webp');
+        background-position:20px 50%;
+    }
+    .jumbo-aux-text-area {
+        text-align:left;
+        margin-top:20vh;
+        padding-top:0;
+        margin-bottom:5vh;
+    }
+
+    .jumbo-aux-heading {
+        font-size:1.5em;
+        color:#aaa;
+    }
+    .jumbo-aux-heading-emphasis {
+        font-size:3.2em;
+    }
+    .jumbo-aux-check-item {
+        color:#000;
+        display:inline-block;
+        margin-right:10px;
+        font-size:0.9em;
+        margin-top:10px;
+        margin-bottom:30px;
+    }
+    .jumbo-aux-check-circle {
+        border:1px solid #000;
+        color:#000;
+    }
+
+    .jumbo-aux-heading {
+        text-align:left;
+    }
 }
 
 @media (min-width:1200px) {
     .jumbo-hero {
         background-size:90%;
-        background-position:250px 50%;
+        background-position:270px 50%;
         height:87vh;
         background-image:url('/lib/img/bg4.webp');
     }
@@ -762,6 +856,31 @@
 
     .panel-contact {
         padding:10vh;
+    }
+    
+    .jumbo-aux {
+        height:85vh;
+        background-image:url('/lib/img/bg9.webp');
+    }
+
+    .jumbo-aux-text-area {
+        margin-top:19vh;
+    }
+
+    .jumbo-aux-heading {
+        text-align:left;
+        color:#aaa;
+        font-size:2em;
+    }
+
+    .jumbo-aux-heading-emphasis {
+        font-size:4em;
+        margin-bottom:5vh;
+        margin-top:2vh;
+    }
+
+    .jumbo-aux-check-item {
+        margin-bottom:5vh;
     }
 
     .footer a {
