@@ -651,6 +651,10 @@
     .jumbo-hero-text-area {
          margin:2vh;
     }
+    .jumbo-hero-heading span {
+        display:block;
+        margin-bottom:6vh;  
+    }
     
     .reviews-carousel {
         width:90%;
