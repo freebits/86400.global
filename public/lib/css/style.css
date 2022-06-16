@@ -142,6 +142,11 @@
     color:#fff;
 }
 
+.panel-services-link {
+    text-decoration:underline;
+    text-decoration-color:#333;
+}
+
 .panel-services-icon {
     color:#ffd100;
     font-size:3em;
