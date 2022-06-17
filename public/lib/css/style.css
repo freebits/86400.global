@@ -757,7 +757,7 @@
         color:#aaa;
     }
     .jumbo-aux-heading-emphasis {
-        font-size:3.2em;
+        font-size:2em;
     }
     .jumbo-aux-check-item {
         color:#000;
@@ -879,7 +879,7 @@
     }
 
     .jumbo-aux-heading-emphasis {
-        font-size:4em;
+        font-size:3em;
         margin-bottom:5vh;
         margin-top:2vh;
     }
@@ -889,7 +889,7 @@
     }
 
     .footer a {
-        margin-top:5vh;
+        margin-top:2.5vh;
     }
 }
 

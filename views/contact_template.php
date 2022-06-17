@@ -93,9 +93,11 @@
                     </div>
                     <div class="col-12 col-md-4">
                         <a href="/">Home</a>
+                        <a href="/brisbane-website-design.html">Brisbane Website Design</a>
                     </div>
                     <div class="col-12 col-md-4">
-                        <a href="">Contact Us</a>
+                        <a href="/contact.php">Contact Us</a>
+                        <a href="/brisbane-php-developer.html">Brisbane PHP Developer</a>
                     </div>
                 </div>
             </div>
@@ -103,5 +105,4 @@
     </body>
 
     <script type="text/javascript" src="/lib/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="/lib/js/slick.min.js"></script>
     <script type="text/javascript" src="/lib/js/bootstrap.bundle.min.js"></script>
