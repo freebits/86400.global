@@ -31,9 +31,20 @@
     color:#202020;
     font-size:2em;
     line-height:1.7em;
-    font-weight:700;
+    font-weight:1;
 }
 
+.jumbo-hero-tagline {
+    color:#fff;
+    text-align:center;
+    display:block;
+    margin-bottom:2vh;
+}
+
+.jumbo-hero-seperator {
+    width:20%;margin:0 auto;margin-bottom:3vh;margin-top:3vh;
+    border:1px solid #fff;
+}
 .jumbo-hero-location {
     color:#aaa;
 }
@@ -444,7 +455,7 @@
     }
 
     .jumbo-hero-heading span {
-        font-size:3em;
+        font-size:2em;
         color:#ffd100;
     }
 
@@ -546,14 +557,15 @@
     .jumbo-hero-heading {
         color:#fff;
         text-align:center;
+        line-height:2em;
     }
     
     .jumbo-hero-heading span {
-        font-size:2.95em;
+        font-size:2em;
         color:#ffd100;
     }
 
-    .jumbo-hero-text-area{
+    .jumbo-hero-text-area {
         text-align:Center;
         margin-bottom:10vh;
     }
@@ -561,6 +573,10 @@
     .btn-black {
         background-color:#fff;
         color:#000;
+    }
+
+    .jumbo-hero-text-area .btn {
+        margin-bottom:5vh;
     }
 
     /* reviews */
@@ -670,11 +686,20 @@
         background-size:115%;
     }
     .jumbo-hero-text-area {
-        margin-top:2vh;
+        margin-top:0vh;
     }
     .jumbo-hero-heading {
         text-align:center;
         color:#000;
+    }
+
+    .jumbo-hero-tagline {
+        color:#000;
+    }
+    
+    .jumbo-hero-seperator {
+        border:1px solid #aaa;
+        margin-top:3vh;
     }
 
     .btn-black {
@@ -785,7 +810,7 @@
         background-image:url('/lib/img/bg4.webp');
     }
     .jumbo-hero-heading {
-        font-size:2.9em;
+        font-size:2.2em;
         text-align:center;
         line-height:2em;
     }
@@ -797,7 +822,8 @@
 
     .jumbo-hero-heading span {
         display:block;
-        margin-bottom:6vh;  
+        margin-bottom:2vh;
+        font-size:2em;
     }
     
     .reviews-carousel {
