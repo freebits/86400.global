@@ -270,7 +270,7 @@
     margin-left:5vh;
     margin-bottom:5vh;
     border-radius:10px;
-    border:1px solid #eee;
+    border:1px solid #ccc;
 }
 
 .panel-template-title {
@@ -342,6 +342,10 @@
 /* aux pages */
 .jumbo-aux {
     background-image:url('/lib/img/bg9-mobile.webp');
+}
+
+.jumbo-city-bg {
+    background-image:url('/lib/img/success-bg-mobile.webp');
 }
 
 .jumbo-aux-text-area {
@@ -796,6 +800,11 @@
         background-image:url('/lib/img/bg9.webp');
         background-position:20px 50%;
     }
+
+    .jumbo-city-bg {
+        background-image:url('/lib/img/success-bg.webp');
+    }
+
     .jumbo-aux-text-area {
         text-align:left;
         margin-top:20vh;
@@ -922,6 +931,10 @@
     .jumbo-aux {
         height:85vh;
         background-image:url('/lib/img/bg9.webp');
+    }
+
+    .jumbo-city-bg {
+        background-image:url('/lib/img/success-bg.webp');
     }
 
     .jumbo-aux-text-area {
