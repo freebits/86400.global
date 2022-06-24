@@ -17,7 +17,8 @@
         <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">
-                  <img src="/lib/img/logo.svg" height="100%" width="auto" alt="Best web design, web hosting and SEO company in Brisbane, 86400.global"/>
+                  <img src="/lib/img/logo.svg" height="100%" width="auto"
+                  alt="Best web design, web hosting and SEO company in Brisbane, 86400.global"/>
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,7 +29,13 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/contact.php">Contact Us</a>
+                    <a class="nav-link" aria-current="page" href="/brisbane-website-design.html">Websites</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/brisbane-php-developer.html">PHP Developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/contact.php">Contact Us</a>
                   </li>
                 </ul>
             </div>
