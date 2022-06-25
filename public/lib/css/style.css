@@ -699,6 +699,10 @@
         padding:6vh;
     }
 
+    .footer-brand {
+        margin-top:1vh;
+    }
+
     .footer a {
         margin-top:1vh;
     }
@@ -835,6 +839,9 @@
     .jumbo-aux-heading {
         text-align:left;
     }
+    .footer-brand {
+        margin-top:0;
+    }
 }
 
 @media (min-width:1200px) {
@@ -845,7 +852,7 @@
         background-image:url('/lib/img/bg4.webp');
     }
     .jumbo-hero-heading {
-        font-size:2.2em;
+        font-size:2em;
         text-align:center;
         line-height:2em;
     }
