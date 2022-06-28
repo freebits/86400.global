@@ -16,7 +16,7 @@ function add_account(string $username, string $password_hash): void
 }
 
 
-function get_password_hash(string $username): void
+function get_password_hash(string $username): string
 {
     $dbh = get_database();
     $sth = $dbh->prepare(

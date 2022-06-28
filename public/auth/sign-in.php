@@ -25,7 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($username_error) && empty($password_error)) {
-          header('Location: /success.html');
+
+        header('Location: /success.html');
     }
 }
 require_once(dirname(__DIR__).'/views/sign_in_template.php');
