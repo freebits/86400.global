@@ -11,3 +11,28 @@ function generate_password_hash(string $clear_text_password): string
 {
     return password_hash($clear_text_password, PASSWORD_DEFAULT);
 }
+
+function grant_session_auth(string $username): void
+{
+    session_start();
+    $_SESSION['auth'] = TRUE;
+    return;
+}
+
+function check_session_auth(): boolean
+{
+    session_start();
+    if(!isset($_SESSION['auth']) {
+        return FALSE;
+    }
+    else {
+        return $_SESSION['auth'];
+    }
+}
+
+function revoke_session_auth(): void
+{
+    session_start();
+    unset($_SESSION['auth']);
+    return;
+]
