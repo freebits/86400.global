@@ -20,8 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (strlen($password) === 0) {
         $password_error = 'Password is required.';
-    } elseif (strlen($phone) > MAX_PASSWORD_LENGTH) {
-        $phone_error = 'Passwird must be less than '.MAX_PASSWORD_LENGTH.' characters.';
+    } elseif (strlen($password) > MAX_PASSWORD_LENGTH) {
+        $password_error = 'Passwird must be less than '.MAX_PASSWORD_LENGTH.' characters.';
     }
 
     if(check_password($username, $password) {
