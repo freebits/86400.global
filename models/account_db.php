@@ -20,3 +20,23 @@ function add_account(string $username, string $password_hash): void
     $dbh = null;
     return;
 }
+
+
+function get_password_hash(string $username): void
+{
+    $cfg = get_config();
+    try {
+        $dbh = new PDO("pgsql:dbname=".$cfg['DB_NAME'], $cfg['DB_USER']);
+    } catch (Exception $e) {
+        error_log('Database Connection Failed: '.$e->getMessage());
+        exit;
+    }
+    $sth = $dbh->prepare(
+        'SELECT (password_hash) FROM account WHERE username=:username'
+    );
+    $sth->bindParam(':username', $username, PDO::PARAM_STR);
+    $sth->execute();
+    $row = $sth->fetch();
+    $dbh = null;
+    return $row['password_hash'];
+}
