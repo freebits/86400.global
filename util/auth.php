@@ -15,17 +15,16 @@ function generate_password_hash(string $clear_text_password): string
 function grant_session_auth(string $username): void
 {
     session_start();
-    $_SESSION['auth'] = TRUE;
+    $_SESSION['auth'] = true;
     return;
 }
 
 function check_session_auth(): boolean
 {
     session_start();
-    if(!isset($_SESSION['auth']) {
-        return FALSE;
-    }
-    else {
+    if (!isset($_SESSION['auth']) {
+        return false;
+    } else {
         return $_SESSION['auth'];
     }
 }

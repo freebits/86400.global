@@ -35,14 +35,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $password_repeat_error = 'Passwird must be less than '.MAX_PASSWORD_REPEAT_LENGTH.' characters.';
     }
 
-    if(strcmp($password, $password_repeat) != 0) {
+    if (strcmp($password, $password_repeat) != 0) {
         $password_repeat_error - 'Password does not match';
     }
 
     if (empty($username_error) && empty($password_error) && empty($password_repeat_error)) {
-        
         header('Location: /success.html');
     }
 }
 require_once(dirname(__DIR__).'/views/sign_in_template.php');
-?>

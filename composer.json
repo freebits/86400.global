@@ -12,7 +12,7 @@
   },
   
   "autoload": {
-    "files": ["config/config.php", "models/contact_db.php", "util/contact_mail.php"]
+    "files": ["util/config.php", "models/contact_db.php", "util/contact_mail.php"]
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6"
