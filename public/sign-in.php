@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: /success.html');
     }
 }
-require_once(dirname(__DIR__).'/views/sign_in_template.php');
+
 echo $twig->render('sign_in_template.twig', ['username_error' => $username_error,
                                              'password_error' => $password_error,
                                              'username' => $username
