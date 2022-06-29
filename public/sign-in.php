@@ -27,8 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $password_error = 'Passwird must be less than '.MAX_PASSWORD_LENGTH.' characters.';
     }
 
-    if (check_password($username, $password) {
-    }
+    if (check_password($username, $password)) {}
 
     if (empty($username_error) && empty($password_error)) {
         header('Location: /success.html');
