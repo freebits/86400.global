@@ -7,9 +7,7 @@ define('MAX_EMAIL_LENGTH', 128);
 define('MAX_MESSAGE_LENGTH', 2048);
 
 $loader = new \Twig\Loader\FilesystemLoader('../views/');
-$twig = new \Twig\Environment($loader, [
-
-]);
+$twig = new \Twig\Environment($loader, []);
 
 $name = '';
 $name_error = '';

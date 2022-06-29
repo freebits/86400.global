@@ -1,0 +1,58 @@
+{% extends "base.twig" %}
+{% block page_title %}
+    Sign In
+{% endblock %}
+{% block page_description %}
+    Client Sign In
+{% endblock %}
+{% block body %}
+    <div class="jumbotron jumbo-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="panel-contact">
+                        <h1 class="contact-heading">
+                            <small>Client Portal</small><br/>
+                            <strong>Sign In</strong>
+                        </h1>
+                        <p>Enter your membership details to access your data</p>
+                        <hr/><br/>
+                        <form action="/register.php" method="POST">
+                            <div class="form-group">
+                                <label>Username:</label>
+                                <input name="username" type="text" class="form-control form-control-md" required
+                                value="{% if username %}{{ username }}{% endif %}"/>
+                                <p class="form-error">
+                                    {% if username_error %}
+                                        {{ username_error }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label>Password:</label>
+                                <input name="password" type="text" class="form-control form-control-md" required
+                                value="{% if password %}{{ password }}{% endif %}"/>
+                                <p class="form-error">
+                                    {% if password_error %}
+                                        {{ password_error }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label>Password Repeat:</label>
+                                <input name="username" type="text" class="form-control form-control-md" required
+                                value="{% if password_repeat %}{{ password_repeat } }}{% endif %}"/>
+                                <p class="form-error">
+                                    {% if password_repeat_error %}
+                                        {{ password_repeat_error }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <input type="submit" class="btn btn-lg btn-yellow w-100" value="Submit Enquiry"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

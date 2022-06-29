@@ -5,9 +5,7 @@ define('MAX_PASSWORD_LENGTH', 32);
 define('MAX_PASSWORD_REPEAT_LENGTH', 32);
 
 $loader = new \Twig\Loader\FilesystemLoader('../views/');
-$twig = new \Twig\Environment($loader, [
-
-]);
+$twig = new \Twig\Environment($loader, []);
 
 $usename = '';
 $username_error = '';

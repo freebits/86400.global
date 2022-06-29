@@ -3,6 +3,9 @@ require_once dirname(__DIR__).'/vendor/autoload.php';
 define('MAX_USERNAME_LENGTH', 128);
 define('MAX_PASSWORD_LENGTH', 32);
 
+$loader = new \Twig\Loader\FilesystemLoader('../views/');
+$twig = new \Twig\Environment($loader, []);
+
 $usename = '';
 $username_error = '';
 $password = '';
@@ -32,3 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 require_once(dirname(__DIR__).'/views/sign_in_template.php');
+echo $twig->render('sign_in_template.twig', ['username_error' => $username_error,
+                                             'password_error' => $password_error,
+                                             'username' => $username
+                                            ]);
