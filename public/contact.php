@@ -6,6 +6,11 @@ define('MAX_PHONE_LENGTH', 32);
 define('MAX_EMAIL_LENGTH', 128);
 define('MAX_MESSAGE_LENGTH', 2048);
 
+$loader = new \Twig\Loader\FilesystemLoader('../views/');
+$twig = new \Twig\Environment($loader, [
+
+]);
+
 $name = '';
 $name_error = '';
 $phone = '';
@@ -54,4 +59,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           header('Location: /success.html');
     }
 }
-require_once(dirname(__DIR__).'/views/contact_template.php');
+
+echo $twig->render('contact_template.twig', ['name_error' => $name_error,
+                                             'email_error' => $email_error,
+                                             'phone_error' => $phone_error,
+                                             'message_error' => $message_error,
+                                             'name' => $name,
+                                             'email' => $email,
+                                             'phone' => $phone,
+                                             'message' => $message]);

@@ -1,0 +1,69 @@
+{% extends "base.twig" %}
+{% block page_title %}
+    Contact Us
+{% endblock %}
+{% block page_description %}
+    Premium Web Design based in Brisbane, Queensland, Australia.
+    Providing complete website services including web design, hosting and SEO.
+{% endblock %}
+{% block body %}
+    <div class="jumbotron jumbo-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="panel-contact">
+                        <h1 class="contact-heading">
+                            <small>Contact</small><br/>
+                            <strong>86400.global</strong>
+                        </h1>
+                        <p>Enquire about our websites and web services.</p>
+                        <hr/><br/>
+                        <form action="/contact.php" method="POST">
+                            <div class="form-group">
+                                <label>Name:</label>
+                                <input name="name" type="text" class="form-control form-control-md" required
+                                value="{% if name %}{{ name }}{% endif %}"/>
+                                <p class="form-error">
+                                    {% if name_error %}
+                                        {{ name_error }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone:</label>
+                                <input name="phone" type="tel" class="form-control form-control-md" required
+                                value="{% if phone %}{{ phone }}{% endif %}"/>
+                                <p class="form-error">
+                                    {% if phone_error %}
+                                        {{ phone_error }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label>Email:</label>
+                                <input name="email" type="email" class="form-control form-control-md" required
+                                value="{% if email %}{{ email }}{% endif %}"/>
+                                <p class="form-error">
+                                    {% if email_error %}
+                                        {{ email_error }}    
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label>Message:</label>
+                                <textarea name="message" type="text" class="form-control form-control-md" rows="5" required
+                                value="{% if message %}{{ message }}{% endif %}"></textarea>
+                                <p class="form-error">
+                                    {% if message %}
+                                        {{ message_error }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <input type="submit" class="btn btn-lg btn-yellow w-100" value="Submit Enquiry"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
