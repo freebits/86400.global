@@ -9,7 +9,9 @@
     "ext-curl": "*",
     "kriswallsmith/buzz": "^1.2",
     "nyholm/psr7": "^1.4",
-    "twig/twig": "^3.0"
+    "twig/twig": "^3.0",
+    "league/omnipay": "^3",
+    "omnipay/stripe": "^3.2"
   },
   
   "autoload": {
