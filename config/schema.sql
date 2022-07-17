@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS credit_card (
 CREATE TABLE IF NOT EXISTS subscription (
     id SERIAL PRIMARY KEY,
     name VARCHAR(128) NOT NULL,
-    price INTEGER NOT NULL CHECK (price > 0),
-    billing_period INTEGER NOT NULL CHECK (billing_period > 0)
+    price_cents INTEGER NOT NULL CHECK (price > 0),
+    billing_period_days INTEGER NOT NULL CHECK (billing_period > 0)
 );
 
 CREATE TABLE IF NOT EXISTS account_subscription (
