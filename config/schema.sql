@@ -31,19 +31,16 @@ CREATE TABLE IF NOT EXISTS subscription (
 );
 
 CREATE TABLE IF NOT EXISTS account_subscription (
-    account_id INTEGER NOT NOT NULL,
-    subscription_id INTEGER NOT NULL,
+    id SERIAL PRIMARY KEY,
+    account_id INTEGER NOT NOT NULL REFERENCES account(id),
+    subscription_id INTEGER NOT NULL REFERENCES subscription(id),
     credit_card_id INTEGER NOT NULL REFERENCES credit_card(id),
-    PRIMARY KEY (account_id, subscription_id)
     created TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 )
 
 CREATE TABLE IF NOT EXISTS charge (
     id SERIAL PRIMARY KEY,
-    amount INTEGER NOT NULL CHECK (amount >= 0),
-    account_id INTEGER NOT NULL,
-    subscription_id INTEGER NOT NULL,
-    FOREIGN KEY (account_id, subscription_id) REFERENCES account_subscription (account_id, subscription_id),
+    account_subscription_id INTEGER NOT NULL REFERENCES account_subscription(id),
     created TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
