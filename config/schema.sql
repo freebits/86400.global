@@ -33,4 +33,4 @@ CREATE TABLE IF NOT EXISTS account_subscription (
     subscription_id INTEGER NOT NULL,
     credit_card_id INTEGER NOT NULL REFERENCES credit_card(id),
     PRIMARY KEY (account_id, subscription_id)
-);
+)
