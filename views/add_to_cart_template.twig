@@ -9,59 +9,7 @@
     <div class="jumbotron jumbo-contact">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8 col-lg-6">
-                    <div class="panel-contact">
-                        <h1 class="contact-heading">
-                            <small>Add</small><br/>
-                            <strong>Credit Card</strong>
-                        </h1>
-                        <p>Use your favourite payment methods</p>
-                        <hr/><br/>
-                        <form action="/add-to-credit-card.php" method="POST">
-                            <div class="form-group">
-                                <label>Card Number:</label>
-                                <input name="credit_card_number" type="number" class="form-control form-control-md" required
-                                value="{% if credit_card_number %}{{ credit_card_number }}{% endif %}"/>
-                                <p class="form-error">
-                                    {% if credit_card_number_error %}
-                                        {{ credit_card_number_error }}
-                                    {% endif %}
-                                </p>
-                            </div>
-                            <div class="form-group">
-                                <label>Expirary Month:</label>
-                                <input name="expirary_month" type="tel" class="form-control form-control-md" required
-                                value="{% if expirary_month %}{{ expirary_month }}{% endif %}"/>
-                                <p class="form-error">
-                                    {% if expirary_month_error %}
-                                        {{ expirary_month_error }}
-                                    {% endif %}
-                                </p>
-                            </div>
-                            <div class="form-group">
-                                <label>Expirary Year:</label>
-                                <input name="expirary_year" type="number" class="form-control form-control-md" required
-                                value="{% if expirary_year %}{{ expirary_year }}{% endif %}"/>
-                                <p class="form-error">
-                                    {% if expirary_year_error %}
-                                        {{ expirary_year_error }}    
-                                    {% endif %}
-                                </p>
-                            </div>
-                            <div class="form-group">
-                                <label>CCV:</label>
-                                <input name="ccv" type="number" class="form-control form-control-md" required
-                                value="{% if ccv %}{{ ccv }}{% endif %}"/>
-                                <p class="form-error">
-                                    {% if ccv %}
-                                        {{ ccv_error }}
-                                    {% endif %}
-                                </p>
-                            </div>
-                            <input type="submit" class="btn btn-lg btn-yellow w-100" value="Submit Enquiry"/>
-                        </form>
-                    </div>
-                </div>
+        
             </div>
         </div>
     </div>

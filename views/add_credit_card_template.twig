@@ -17,7 +17,7 @@
                         </h1>
                         <p>Use your favourite payment methods</p>
                         <hr/><br/>
-                        <form action="/add-to-credit-card.php" method="POST">
+                        <form action="/add-credit-card.php" method="POST">
                             <div class="form-group">
                                 <label>Card Number:</label>
                                 <input name="credit_card_number" type="number" class="form-control form-control-md" required
@@ -29,22 +29,22 @@
                                 </p>
                             </div>
                             <div class="form-group">
-                                <label>Expirary Month:</label>
-                                <input name="expirary_month" type="tel" class="form-control form-control-md" required
-                                value="{% if expirary_month %}{{ expirary_month }}{% endif %}"/>
+                                <label>Expiry Month:</label>
+                                <input name="expiry_month" type="tel" class="form-control form-control-md" required
+                                value="{% if expiry_month %}{{ expiry_month }}{% endif %}"/>
                                 <p class="form-error">
-                                    {% if expirary_month_error %}
-                                        {{ expirary_month_error }}
+                                    {% if expiry_month_error %}
+                                        {{ expiry_month_error }}
                                     {% endif %}
                                 </p>
                             </div>
                             <div class="form-group">
-                                <label>Expirary Year:</label>
-                                <input name="expirary_year" type="number" class="form-control form-control-md" required
-                                value="{% if expirary_year %}{{ expirary_year }}{% endif %}"/>
+                                <label>Expiry Year:</label>
+                                <input name="expiry_year" type="number" class="form-control form-control-md" required
+                                value="{% if expiry_year %}{{ expiry_year }}{% endif %}"/>
                                 <p class="form-error">
-                                    {% if expirary_year_error %}
-                                        {{ expirary_year_error }}    
+                                    {% if expiry_year_error %}
+                                        {{ expiry_year_error }}    
                                     {% endif %}
                                 </p>
                             </div>
@@ -58,7 +58,7 @@
                                     {% endif %}
                                 </p>
                             </div>
-                            <input type="submit" class="btn btn-lg btn-yellow w-100" value="Submit Enquiry"/>
+                            <input type="submit" class="btn btn-lg btn-yellow w-100" value="Confirm Purchase"/>
                         </form>
                     </div>
                 </div>
