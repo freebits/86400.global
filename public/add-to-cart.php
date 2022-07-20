@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($subscription_id_error) && empty($quantity_error)) {
-        header('Location: /success.html');
+        header('Location: /add-credit-card.php');
     }
 }
 
