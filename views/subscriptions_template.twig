@@ -1,0 +1,37 @@
+{% extends "base.twig" %}
+{% block page_title %}
+    Subscriptions
+{% endblock %}
+{% block page_description %}
+    Subscriptions for 86400.global
+{% endblock %}
+{% block body %}
+    <div class="jumbotron jumbo-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-12">
+                        <h1 class="contact-heading">
+                            <small>Find</small><br/>
+                            <strong>Subscriptions</strong>
+                        </h1>
+                        <p>Subscribe to our services</p>
+                        <hr/><br/>
+                </div>
+                {% for subscriptions as subscription %}
+                    <div class="col-12 col-md-6">
+                        <div class="panel-contact">
+                            <h2>
+                                {{ subscription.name }}
+                            </h2>
+                            <p>
+                                {{ subscription.price}}
+                            </p>
+                            <p>
+                                {{ subscription.billing_period_days }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
