@@ -18,15 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $quantity = filter_var($_POST['quantity'], FILTER_SANITIZE_STRING);
     
     if (strlen($subscription_id) === 0) {
-        $subscription_id_error = 'Credit card number is required.';
+        $subscription_id_error = 'Subscription ID is required.';
     } elseif (strlen($subscription_id) > MAX_SUBSCRIPTION_ID_LENGTH) {
-        $subscription_id_error = 'Credit card number must be less than '.MAX_SUBSCRIPTION_ID_LENGTH.' characters.';
+        $subscription_id_error = 'Subscription ID must be less than '.MAX_SUBSCRIPTION_ID_LENGTH.' characters.';
     }
 
     if (strlen($quantity) === 0) {
-        $quantity_error = 'Expirary month is required.';
+        $quantity_error = 'Quantity is required.';
     } elseif (strlen($quantity) > MAX_QUANTITY_LENGTH) {
-        $quantity_error = 'Expirary month must be less than '.MAX_QUANTITY_LENGTH.' characters.';
+        $quantity_error = 'Quantity must be less than '.MAX_QUANTITY_LENGTH.' characters.';
     }
 
     if (empty($subscription_id_error) && empty($quantity_error)) {
@@ -35,7 +35,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 echo $twig->render('add_credit_card_template.twig', ['subscription_id_error' => $subscription_id_error,
-                                             'quantity_error' => $quantity_error,
-                                             'expirary_year_error' => $expirary_year_error,
-                                             'cvv_error' => $cvv_error
+                                             'quantity_error' => $quantity_error
                                             ]);
