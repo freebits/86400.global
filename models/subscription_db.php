@@ -20,7 +20,7 @@ function get_subscriptions()
 {
     $dbh = get_database();
     $sth = $dbh->prepare(
-        'SELECT (name, price_cents, billing_period_days) FROM subscription'
+        'SELECT (id, name, price_cents, billing_period_days) FROM subscription'
     );
     $sth->execute();
     $rows = $sth->fetchAll();

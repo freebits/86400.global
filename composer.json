@@ -19,6 +19,7 @@
       "util/config.php",
       "util/db.php",
       "util/contact_mail.php",
+      "util/cart.php",
       "models/contact_db.php",
       "models/subscription_db.php"
     ] 

@@ -32,5 +32,5 @@ function get_cart() {
     session_start();
     init_cart();
 
-    return $_SESSION['cart']
+    return $_SESSION['cart'];
 }

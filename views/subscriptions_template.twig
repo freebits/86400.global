@@ -20,15 +20,16 @@
                 {% for subscription in subscriptions %}
                     <div class="col-12 col-md-6">
                         <div class="panel-contact ">
+                        <h2>
+                            {{ subscription[0] }}
+                        </h2>
+                        <hr/>
                         <form action="/add-to-cart.php" method="POST">
-                            <label for="name">Name:</label>
-                            <input name="name" type="text" value="{{ subscription[0] }}" class="form-control form-control-lg" required disabled/>
-                            <br/>
-                            <label for="price_cents">Price (Cents):</label>
-                            <input name="price_cents" type="text" value="{{ subscription[0] }}" class="form-control form-control-lg" required disabled/>
-                            <br/>
-                            <label for="billing_period_days">Billing Period (Days):</label>
-                            <input name="billing_period_days" type="text" value="{{ subscription[0] }}" class="form-control form-control-lg" required disabled/>
+                            <label for="subscrition_id">Subscription ID:</label>
+                            <input name="subscription_id" type="text" value="{{ subscription[0] }}" class="form-control form-control-lg" required disabled />
+                            <label for="quantity">Quantity:</label>
+                            <input name="quantity" type="number" value="1" class="form-control form-control-lg" required/>
+                            <input name="ref_url" type="text" value="/subscriptions.php" class="form-control form-control-lg" required disabled hidden/>
                             <br/>
                             <button type="submit" class="btn btn-primary w-100">Add To Cart</button>
                         </div>
