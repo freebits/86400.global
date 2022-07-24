@@ -43,6 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($username_error) && empty($password_error) && empty($password_repeat_error)) {
+        
+        $stripe_customer_id = stripe_create_customer();
+        $password_hash = generate_password_hash($password);
+        $account_id = add_account($username, $password_hash, $stripe_customer_id);
+        auth($account_id);
         header('Location: /success.html');
     }
 }
