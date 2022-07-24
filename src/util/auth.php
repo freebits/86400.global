@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__.'/../../vendor/autoload.php';
 
 function check_password(string $username, string $password): boolean
 {

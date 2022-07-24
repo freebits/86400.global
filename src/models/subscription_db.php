@@ -1,5 +1,5 @@
 <?php
-require dirname(__DIR__).'/vendor/autoload.php';
+require_once __DIR__.'/../../vendor/autoload.php';
 
 function add_subscription(string $name, int $price_cents, int $billing_period_days): void
 {

@@ -1,5 +1,5 @@
 <?php
-require dirname(__DIR__).'/vendor/autoload.php';
+require_once __DIR__.'/../../vendor/autoload.php';
 
 function add_contact(string $name, string $phone, string $email, string $message): void
 {

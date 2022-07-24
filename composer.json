@@ -16,12 +16,12 @@
   
   "autoload": {
     "files": [
-      "util/config.php",
-      "util/db.php",
-      "util/contact_mail.php",
-      "util/cart.php",
-      "models/contact_db.php",
-      "models/subscription_db.php"
+      "src/util/config.php",
+      "src/util/db.php",
+      "src/util/contact_mail.php",
+      "src/util/cart.php",
+      "src/models/contact_db.php",
+      "src/models/subscription_db.php"
     ] 
   },
   "require-dev": {

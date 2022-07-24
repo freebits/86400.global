@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__.'/../../vendor/autoload.php';
 
 function init_cart() {
     session_start();

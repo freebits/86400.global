@@ -1,5 +1,6 @@
 <?php
-require dirname(__DIR__).'/vendor/autoload.php';
+require_once __DIR__.'/../../vendor/autoload.php';
+
 use Mailgun\Mailgun;
 
 function mail_contact(string $name, string $phone, string $email, string $message): void
