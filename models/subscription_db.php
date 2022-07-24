@@ -23,7 +23,7 @@ function get_subscriptions()
         'SELECT (id, name, price_cents, billing_period_days) FROM subscription'
     );
     $sth->execute();
-    $rows = $sth->fetchAll();
+    $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
     $dbh = null;
     return $rows;
 }

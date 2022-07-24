@@ -26,7 +26,7 @@ function get_password_hash(string $username): string
     );
     $sth->bindParam(':username', $username, PDO::PARAM_STR);
     $sth->execute();
-    $row = $sth->fetch();
+    $row = $sth->fetch(PDO::FETCH_ASSOC);
     $dbh = null;
     return $row['password_hash'];
 }
