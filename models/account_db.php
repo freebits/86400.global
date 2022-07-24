@@ -1,15 +1,16 @@
 <?php
 require dirname(__DIR__).'/vendor/autoload.php';
 
-function add_account(string $username, string $password_hash): void
+function add_account(string $username, string $password_hash, string $stripe_customer_id): void
 {
     $dbh = get_database();
     $sth = $dbh->prepare(
-        'INSERT INTO account(username, password_hash)
-        VALUES (:username, :password_hash)'
+        'INSERT INTO account(username, password_hash, stripe_customer_id)
+        VALUES (:username, :password_hash, :stripe_customer_id)'
     );
     $sth->bindParam(':username', $name, PDO::PARAM_STR);
-    $sth->bindParam(':password_hash', $phone, PDO::PARAM_STR);
+    $sth->bindParam(':password_hash', $password_hash, PDO::PARAM_STR);
+    $sth->bindParam(':stripe_customer_id', $stripe_customer_id, PDO::PARAM_STR);
     $sth->execute();
     $dbh = null;
     return;
