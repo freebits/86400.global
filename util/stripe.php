@@ -25,3 +25,13 @@ function stripe_save_card($stripe_customer_id, $cc_number, $exp_month, $exp_year
 
     return $cc->id;
 }
+
+function stripe_charge($amount, $currency, $source)
+{
+    $stripe = new \Stripe\StripeClient("sk_test_4eC39HqLyjWDarjtT1zdp7dc");
+    $stripe->charges->create(array(
+        'amount' => $amount,
+        'currency' => $currency,
+        'source' => $source
+    ));
+}
