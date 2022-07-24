@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS account (
     id SERIAL PRIMARY KEY,
     username VARCHAR(128) NOT NULL,
     password_hash VARCHAR(32) NOT NULL,
+    stripe_customer_id VARCHAR(64) NOT NULL,
     created TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
