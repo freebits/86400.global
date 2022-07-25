@@ -6,4 +6,6 @@ $twig = new \Twig\Environment($loader, []);
 
 $subscriptions = get_subscriptions();
 
+var_dump($subscriptions);
+
 echo $twig->render('subscriptions_template.twig', ['subscriptions' => $subscriptions ]);
