@@ -20,10 +20,10 @@ function grant_session_auth(string $username): void
     return;
 }
 
-function check_session_auth(): boolean
+function check_session_auth(): bool
 {
     session_start();
-    if (!isset($_SESSION['auth']) {
+    if(!isset($_SESSION['auth']) {
         return false;
     } else {
         return $_SESSION['auth'];
@@ -35,4 +35,4 @@ function revoke_session_auth(): void
     session_start();
     unset($_SESSION['auth']);
     return;
-]
+}
