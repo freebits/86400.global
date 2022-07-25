@@ -8,7 +8,7 @@ function add_charge(int $account_subscription_id): void
         'INSERT INTO charge (account_subscription_id)
         VALUES (:account_subscription_id)'
     );
-    $sth->bindParam(':account_subscription_id', $name, PDO::PARAM_INT);
+    $sth->bindParam(':account_subscription_id', $account_subscription_id, PDO::PARAM_INT);
     $sth->execute();
     $dbh = null;
     return;
