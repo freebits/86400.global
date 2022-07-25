@@ -20,8 +20,13 @@
       "src/util/db.php",
       "src/util/contact_mail.php",
       "src/util/cart.php",
+      "src/util/stripe.php",
+      "src/models/subscription_db.php",
       "src/models/contact_db.php",
-      "src/models/subscription_db.php"
+      "src/models/account_db.php",
+      "src/models/account_subscription_db.php",
+      "src/models/charge_db.php",
+      "src/models/credit_card_db.php"
     ] 
   },
   "require-dev": {
