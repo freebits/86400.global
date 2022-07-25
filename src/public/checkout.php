@@ -1,6 +1,6 @@
 <?php
 
-$cart_items = get_cart_items();
+$cart_items = get_cart();
 $subscriptions = array();
 
 foreach($cart_items as $subscription_id => $quantity)
