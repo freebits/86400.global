@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__.'/../../vendor/autoload.php';
 
-function check_password(string $username, string $password): boolean
+function check_password(string $username, string $password): bool
 {
     $password_hash = get_password_hash($username);
     return password_verify($password, $password_hash);
@@ -23,7 +23,7 @@ function grant_session_auth(string $username): void
 function check_session_auth(): bool
 {
     session_start();
-    if(!isset($_SESSION['auth']) {
+    if(!isset($_SESSION['auth'])) {
         return false;
     } else {
         return $_SESSION['auth'];
