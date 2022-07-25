@@ -7,7 +7,7 @@ $twig = new \Twig\Environment($loader, []);
 $cart_items = get_cart_items();
 $subscriptions = array();
 
-foreach($cart_items as $subscription_id => $quantity) {
+foreach ($cart_items as $subscription_id => $quantity) {
     array_push($subscriptions, get_subscription($subscription_id));
 }
 

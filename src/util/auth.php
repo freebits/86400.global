@@ -23,7 +23,7 @@ function grant_session_auth(string $username): void
 function check_session_auth(): bool
 {
     session_start();
-    if(!isset($_SESSION['auth'])) {
+    if (!isset($_SESSION['auth'])) {
         return false;
     } else {
         return $_SESSION['auth'];

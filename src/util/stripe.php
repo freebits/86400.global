@@ -15,13 +15,14 @@ function stripe_save_card($stripe_customer_id, $cc_number, $exp_month, $exp_year
         $stripe->customers->createSource(
             $stripe_customer_id,
             'source' => array(
-                'object' => 'card',
-                'number' => $cc_number,
-                'exp_month' => $exp_month,
-                'exp_year' => $exp_year,
-                'cvc' => $cvc,
+            'object' => 'card',
+            'number' => $cc_number,
+            'exp_month' => $exp_month,
+            'exp_year' => $exp_year,
+            'cvc' => $cvc,
             )
-        ));
+        )
+    );
 
     return $cc->id;
 }

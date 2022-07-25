@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $quantity_error = 'Quantity is required.';
     } elseif (strlen($quantity) > MAX_QUANTITY_LENGTH) {
         $quantity_error = 'Quantity must be less than '.MAX_QUANTITY_LENGTH.' characters.';
-    } 
+    }
 
     if (strlen($ref_url) === 0) {
         $ref_url_error = 'Ref url is required.';
