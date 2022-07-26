@@ -1,6 +1,5 @@
 <?php
-
-require 'vendor/autoload.php';
+require_once __DIR__.'/../../vendor/autoload.php';
 
 // This is a public sample test API key.
 // Don’t submit any personally identifiable information in requests made with this key.
