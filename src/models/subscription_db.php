@@ -34,3 +34,16 @@ function get_subscriptions()
     $dbh = null;
     return $rows;
 }
+
+function get_subscription_price($subscription_id)
+{
+    $dbh = get_database();
+    $sth = $dbh->prepare(
+        'SELECT price_cents FROM subscription WHERE id=:subscription_id'
+    );
+    $sth->bindParam(':subscription_id', $subscription_id, PDO::PARAM_INT);
+    $sth->execute();
+    $row = $sth->fetch(PDO::FETCH_ASSOC);
+    $dbh = null;
+    return $row['price_cents'];
+}

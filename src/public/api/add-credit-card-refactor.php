@@ -6,6 +6,15 @@ require_once __DIR__.'/../../../vendor/autoload.php';
 // Sign in to see your own test API key embedded in code samples.
 \Stripe\Stripe::setApiKey('sk_test_wsFx86XDJWwmE4dMskBgJYrt');
 
+function get_cart_total() {
+    $cart_total = 0;
+    foreach ($cart_items as $subscription_id => $quantity) {
+        $cart_total += get_subscription_price($subscription_id) * $quantity;
+    }
+    return $cart_total;
+}
+
+
 header('Content-Type: application/json');
 
 try {
