@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__).'/vendor/autoload.php';
+require_once dirname(__DIR__).'../../vendor/autoload.php';
 
 define('MAX_NAME_LENGTH', 128);
 define('MAX_PHONE_LENGTH', 32);

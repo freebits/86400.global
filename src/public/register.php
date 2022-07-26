@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__).'/vendor/autoload.php';
+require_once dirname(__DIR__).'../../vendor/autoload.php';
 define('MAX_USERNAME_LENGTH', 128);
 define('MAX_PASSWORD_LENGTH', 32);
 define('MAX_PASSWORD_REPEAT_LENGTH', 32);
