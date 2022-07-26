@@ -19,19 +19,25 @@
                 </div>
                 {% for subscription in subscriptions %}
                     <div class="col-12 col-md-6">
-                        <div class="panel-contact ">
-                        <h2>
-                            {{ subscription[0] }}
+                        <div class="panel-contact panel-subscription text-center">
+                        <h2 class="panel-subscription-name">
+                            {{ subscription.name }}
                         </h2>
-                        <hr/>
+                        <p class="panel-subscription-price">
+                            ${{ subscription.price_cents }} AUD every
+                            {{ subscription.billing_period_days }} Days    
+                        </p>
+                        
                         <form action="/add-to-cart.php" method="POST">
-                            <label for="subscrition_id">Subscription ID:</label>
-                            <input name="subscription_id" type="text" value="{{ subscription[0] }}" class="form-control form-control-lg" required disabled />
-                            <label for="quantity">Quantity:</label>
-                            <input name="quantity" type="number" value="1" class="form-control form-control-lg" required/>
+                            <input name="subscription_id" type="text" value="{{ subscription.id }}" class="form-control form-control-lg" hidden required disabled />
+                            <div class="panel-subscription-quantity">
+                                <label for="quantity">Quantity: </label>
+                                <input name="quantity" type="number" value="1" class="form-control form-control-md" min="1" required style="display:inline-block;width:40%;"/>
+                            </div>
+                            <br/>
                             <input name="ref_url" type="text" value="/subscriptions.php" class="form-control form-control-lg" required disabled hidden/>
                             <br/>
-                            <button type="submit" class="btn btn-primary w-100">Add To Cart</button>
+                            <button type="submit" class="btn btn-primary w-50">Add To Cart</button>
                         </div>
                     </div>
                 {% endfor %}

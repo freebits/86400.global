@@ -427,6 +427,24 @@
     color:#c00;
 }
 
+/* payment cart and billing */
+.panel-subscription {
+    text-align:center;
+}
+
+.panel-subscription-name {
+    font-size:1.2em;
+}
+
+.panel-subscription-price {
+    font-size:1.7em;
+}
+
+.panel-subscription-quantity {
+    width:50%;
+    display:inline-block;
+}
+
 /* success */
 .jumbo-success {
     padding-top:15vh;
