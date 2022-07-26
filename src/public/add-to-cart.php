@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__).'/vendor/autoload.php';
+require_once dirname(__DIR__).'../../vendor/autoload.php';
 
 define('MAX_SUBSCRIPTION_ID_LENGTH', 128);
 define('MAX_QUANTITY_LENGTH', 32);

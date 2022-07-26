@@ -29,13 +29,13 @@
                         </p>
                         
                         <form action="/add-to-cart.php" method="POST">
-                            <input name="subscription_id" type="text" value="{{ subscription.id }}" class="form-control form-control-lg" hidden required disabled />
+                            <input name="subscription_id" type="text" value="{{ subscription.id }}" class="form-control form-control-lg" hidden required  />
                             <div class="panel-subscription-quantity">
                                 <label for="quantity">Quantity: </label>
                                 <input name="quantity" type="number" value="1" class="form-control form-control-md" min="1" required style="display:inline-block;width:40%;"/>
                             </div>
                             <br/>
-                            <input name="ref_url" type="text" value="/subscriptions.php" class="form-control form-control-lg" required disabled hidden/>
+                            <input name="ref_url" type="text" value="/subscriptions.php" class="form-control form-control-lg" required  hidden/>
                             <br/>
                             <button type="submit" class="btn btn-primary w-50">Add To Cart</button>
                         </div>
