@@ -1,6 +1,13 @@
 <?php
 require_once __DIR__.'/../../vendor/autoload.php';
 
+class Subscription {
+    public $name;
+    public $price_cents;
+    public $billing_period_days;
+    public $created;
+}
+
 function add_subscription(string $name, int $price_cents, int $billing_period_days): void
 {
     $dbh = get_database();
